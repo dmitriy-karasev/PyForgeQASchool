@@ -1,0 +1,1 @@
+{'code': 0, 'message': 'success', 'data': {'Id': 236548, 'Name': 'Kayla Wright', 'Email': 'tgarner@example.org', 'Token': '7c543bf9-81bc-40ec-be98-2d64d478d22f'}}

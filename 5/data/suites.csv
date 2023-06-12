@@ -1,0 +1,7 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon Jun 12 18:42:17 GMT 2023","Mon Jun 12 18:42:18 GMT 2023","616","tests","test_post","","","","test_invalid_password",""
+"passed","Mon Jun 12 18:42:18 GMT 2023","Mon Jun 12 18:42:19 GMT 2023","635","tests","test_post","","","","test_get_correct_tourist_by_id",""
+"passed","Mon Jun 12 18:42:16 GMT 2023","Mon Jun 12 18:42:16 GMT 2023","647","tests","test_post","","","","test_empty_login_password",""
+"passed","Mon Jun 12 18:42:18 GMT 2023","Mon Jun 12 18:42:18 GMT 2023","635","tests","test_post","","","","test_correct_login",""
+"passed","Mon Jun 12 18:42:16 GMT 2023","Mon Jun 12 18:42:17 GMT 2023","617","tests","test_post","","","","test_invalid_email",""
+"passed","Mon Jun 12 18:42:19 GMT 2023","Mon Jun 12 18:42:20 GMT 2023","612","tests","test_post","","","","test_get_not_existing_tourist_by_id_1","If the requested id is existing_id + 1 zero then the response is 404 without json"
