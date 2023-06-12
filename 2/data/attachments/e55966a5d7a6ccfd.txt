@@ -1,0 +1,2 @@
+{'email': 'deanashley@example.org', 'password': '123456'}
+{'code': 0, 'message': 'success', 'data': {'Id': 236264, 'Name': 'Mary Martinez', 'Email': 'deanashley@example.org', 'Token': 'a40e3a17-d0eb-45fa-b9cc-0570e93ec45f'}}

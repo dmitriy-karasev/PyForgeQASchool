@@ -1,0 +1,6 @@
+Entering setup
+{'name': 'Mary Martinez', 'email': 'deanashley@example.org', 'password': '123456'}
+{'code': 0, 'message': 'success', 'data': {'Id': 236264, 'Name': 'Mary Martinez', 'Email': 'deanashley@example.org', 'Token': '71509335-ed95-4d61-bfec-38560609de3d'}}
+Customer created in setup before tests with Id = 236264
+{'email': '', 'password': ''}
+{'Message': 'The request is invalid.', 'ModelState': {'log.email': ['field is required'], 'log.password': ['field is required']}}
