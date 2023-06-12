@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon Jun 12 18:55:29 GMT 2023","Mon Jun 12 18:55:30 GMT 2023","604","tests","test_post","","","","test_get_correct_tourist_by_id",""
+"passed","Mon Jun 12 18:55:28 GMT 2023","Mon Jun 12 18:55:29 GMT 2023","546","tests","test_post","","","","test_invalid_password",""
+"passed","Mon Jun 12 18:55:28 GMT 2023","Mon Jun 12 18:55:28 GMT 2023","625","tests","test_post","","","","test_invalid_email",""
+"passed","Mon Jun 12 18:55:30 GMT 2023","Mon Jun 12 18:55:31 GMT 2023","581","tests","test_post","","","","test_get_not_existing_tourist_400_by_id","If the requested id is existing_id + 4 zeroes then the response is 400 with json"
+"passed","Mon Jun 12 18:55:29 GMT 2023","Mon Jun 12 18:55:29 GMT 2023","610","tests","test_post","","","","test_correct_login",""
+"passed","Mon Jun 12 18:55:27 GMT 2023","Mon Jun 12 18:55:28 GMT 2023","592","tests","test_post","","","","test_empty_login_password",""
+"passed","Mon Jun 12 18:55:31 GMT 2023","Mon Jun 12 18:55:31 GMT 2023","537","tests","test_post","","","","test_get_not_existing_tourist_404_by_id","If the requested id is existing_id + 1 zero then the response is 404 without json"

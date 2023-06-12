@@ -1,0 +1,6 @@
+Entering setup
+Account created with Id = 236560
+Tourist created
+Tourist created with id = 236561
+{'email': '', 'password': ''}
+{'Message': 'The request is invalid.', 'ModelState': {'log.email': ['field is required'], 'log.password': ['field is required']}}
