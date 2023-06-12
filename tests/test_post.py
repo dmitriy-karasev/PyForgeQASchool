@@ -1,5 +1,5 @@
 import requests
-import pytest
+# import pytest
 from faker import Faker
 
 # TODO - move json into helper
@@ -41,6 +41,7 @@ json_correct_email_and_password = {
     "password": password
       }
 
+
 def setup_module(module):
     create_customer()
 
@@ -53,6 +54,7 @@ def setup_module(module):
 #     yield
 #     delete_customer()
 
+
 def create_customer():
     global CUSTOMER_ID
     request_url = BASE_URL + "AuthAccount/Registration"
@@ -61,7 +63,7 @@ def create_customer():
     response = requests.post(request_url, json=json_for_customer_creation)
     print(response.json())
     CUSTOMER_ID = response.json()["data"]["Id"]
-    print(f"Customer created in setup before running tests with Id = {CUSTOMER_ID}")
+    print(f"Customer created in setup before tests with Id = {CUSTOMER_ID}")
 
 
 def test_empty_login_password():
@@ -74,6 +76,7 @@ def test_empty_login_password():
     assert response.json()["ModelState"]["log.email"] == ["field is required"]
     assert response.json()["ModelState"]["log.password"] == ["field is required"]
 
+
 def test_invalid_email():
     request_url = BASE_URL + "AuthAccount/Login"
     print(json_incorrect_email)
@@ -82,6 +85,7 @@ def test_invalid_email():
     assert response.status_code == 200
     assert response.json()["message"] == "invalid username or password"
 
+
 def test_invalid_password():
     request_url = BASE_URL + "AuthAccount/Login"
     print(json_incorrect_password)
@@ -89,6 +93,7 @@ def test_invalid_password():
     print(response.json())
     assert response.status_code == 200
     assert response.json()["message"] == "invalid username or password"
+
 
 def test_correct_login():
     request_url = BASE_URL + "AuthAccount/Login"
