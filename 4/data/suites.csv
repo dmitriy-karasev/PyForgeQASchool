@@ -1,0 +1,5 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Mon Jun 12 08:05:30 GMT 2023","Mon Jun 12 08:05:31 GMT 2023","669","tests","test_post","","","","test_invalid_password",""
+"passed","Mon Jun 12 08:05:31 GMT 2023","Mon Jun 12 08:05:32 GMT 2023","644","tests","test_post","","","","test_correct_login",""
+"passed","Mon Jun 12 08:05:29 GMT 2023","Mon Jun 12 08:05:30 GMT 2023","636","tests","test_post","","","","test_empty_login_password",""
+"passed","Mon Jun 12 08:05:30 GMT 2023","Mon Jun 12 08:05:30 GMT 2023","628","tests","test_post","","","","test_invalid_email",""
