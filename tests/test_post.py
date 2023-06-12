@@ -157,19 +157,18 @@ def test_get_correct_tourist_by_id():
     assert response.json()["tourist_location"] == tourist_location
     #assert response.json()["createdat"] == tourist_created_date
 
-def test_get_not_existing_tourist_by_id_1():
+def test_get_not_existing_tourist_400_by_id():
     '''If the requested id is existing_id + 4 zeroes then the response is 400 with json'''
     print(f"Existing tourist_id is {TOURIST_ID}")
     request_url = BASE_URL + f"Tourist/{TOURIST_ID}" + "0000"
     print(f"Requested URL is: {request_url}")
     response = requests.get(request_url)
-    print(response.text)
     print(response.json())
     assert response.status_code == 400
     assert response.json()["Message"] == "The request is invalid."
 
 
-def test_get_not_existing_tourist_by_id_2():
+def test_get_not_existing_tourist_404_by_id():
     '''If the requested id is existing_id + 1 zero then the response is 404 without json'''
     print(f"Existing tourist_id is {TOURIST_ID}")
     request_url = BASE_URL + f"Tourist/{TOURIST_ID}" + "0"
