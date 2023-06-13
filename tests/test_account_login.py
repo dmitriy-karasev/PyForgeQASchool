@@ -5,7 +5,8 @@ from datetime import datetime
 
 # TODO - move json into helper
 
-# automated tests for tourist GET endpoint
+# automated tests for tourist GET endpoint /api/Toutist/{id}
+# getting info about existing tourist
 # in setup we create new tourist and then query its info through GET request
 
 BASE_URL = "http://restapi.adequateshop.com/api/"

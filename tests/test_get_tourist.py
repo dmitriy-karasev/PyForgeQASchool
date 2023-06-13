@@ -4,6 +4,7 @@ from faker import Faker
 
 # automated tests for account POST endpoint
 # in setup we create new account and then try to login with correct/incorrect credentials
+# through this endpoint /api/AuthAccount/Login
 
 BASE_URL = "http://restapi.adequateshop.com/api/"
 ACCOUNT_ID = None
