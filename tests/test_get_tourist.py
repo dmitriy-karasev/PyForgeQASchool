@@ -52,6 +52,7 @@ def setup_module(module):
 
 
 def create_account():
+    '''Account creation'''
     global ACCOUNT_ID
     request_url = BASE_URL + "AuthAccount/Registration"
     response = requests.post(request_url, json=json_for_account_creation)
@@ -59,6 +60,7 @@ def create_account():
     print(f"New account created with Id = {ACCOUNT_ID} in setup")
 
 def test_empty_login_password():
+    '''Tests correct response in case of empty strings for email and password'''
     request_url = BASE_URL + "AuthAccount/Login"
     response = requests.post(request_url, json=json_empty_credentials)
     print(f"Received response is {response.json()}")
@@ -69,6 +71,7 @@ def test_empty_login_password():
 
 
 def test_invalid_email():
+    '''Tests correct response in case of invalid email'''
     request_url = BASE_URL + "AuthAccount/Login"
     response = requests.post(request_url, json=json_incorrect_email)
     print(f"Received response is {response.json()}")
@@ -77,6 +80,7 @@ def test_invalid_email():
 
 
 def test_invalid_password():
+    '''Tests correct response in case of invalid password'''
     request_url = BASE_URL + "AuthAccount/Login"
     response = requests.post(request_url, json=json_incorrect_password)
     print(f"Received response is {response.json()}")
@@ -85,6 +89,7 @@ def test_invalid_password():
 
 
 def test_correct_login():
+    '''Tests correct returned data on successful login'''
     request_url = BASE_URL + "AuthAccount/Login"
     response = requests.post(request_url, json=json_correct_email_and_password)
     print(f"Received response is {response.json()}")

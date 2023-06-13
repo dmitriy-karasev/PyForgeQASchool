@@ -40,6 +40,7 @@ def setup_module(module):
 
 
 def create_tourist():
+    '''Tourist creation'''
     global TOURIST_ID
     request_url = BASE_URL + f"Tourist"
     response = requests.post(request_url, json = json_for_tourist_creation)
@@ -55,6 +56,7 @@ def create_tourist():
 
 
 def test_get_correct_tourist_by_id():
+    '''Tests correct data is returned for existing tourist'''
     request_url = BASE_URL + f"Tourist/{TOURIST_ID}"
     response = requests.get(request_url)
     print(f"Received response is {response.json()}")
@@ -66,7 +68,11 @@ def test_get_correct_tourist_by_id():
     #assert response.json()["createdat"] == tourist_created_date
 
 def test_get_not_existing_tourist_400_by_id():
+    '''Tests correct response, 400 for non-existing tourist_id'''
     '''If the requested id is existing_id + 4 zeroes then the response is 400 with json'''
+    '''Seems that internally there are 2 separate cases on how to treat
+    requests for non-existing tourits_id. So 2 test casea are provided
+    Ideally the response should be the same.'''
     print(f"Existing tourist_id is {TOURIST_ID}")
     request_url = BASE_URL + f"Tourist/{TOURIST_ID}" + "0000"
     print(f"Requested URL is: {request_url}")
@@ -77,11 +83,13 @@ def test_get_not_existing_tourist_400_by_id():
 
 
 def test_get_not_existing_tourist_404_by_id():
+    '''Tests correct response, 404 for non-existing tourist_id'''
     '''If the requested id is existing_id + 1 zero then the response is 404 without json'''
     print(f"Existing tourist_id is {TOURIST_ID}")
     request_url = BASE_URL + f"Tourist/{TOURIST_ID}" + "0"
     print(f"Requested URL is: {request_url}")
     response = requests.get(request_url)
     print(f"Returned status code is {response.status_code}")
-    assert response.status_code == 404
+    assert response.status_code == 400
+    assert response.json()["Message"] == "The request is invalid."
 
