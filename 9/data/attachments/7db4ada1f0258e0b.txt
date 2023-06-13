@@ -1,0 +1,3 @@
+Existing tourist_id is 236798
+Requested URL is: http://restapi.adequateshop.com/api/Tourist/2367980000
+Received response is {'Message': 'The request is invalid.'}

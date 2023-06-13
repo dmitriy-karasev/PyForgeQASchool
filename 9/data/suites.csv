@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Tue Jun 13 08:04:58 GMT 2023","Tue Jun 13 08:04:58 GMT 2023","505","tests","test_account_login","","","","test_get_not_existing_tourist_404_by_id","If the requested id is existing_id + 1 zero then the response is 404 without json"
+"passed","Tue Jun 13 08:04:57 GMT 2023","Tue Jun 13 08:04:58 GMT 2023","509","tests","test_account_login","","","","test_get_not_existing_tourist_400_by_id","If the requested id is existing_id + 4 zeroes then the response is 400 with json"
+"passed","Tue Jun 13 08:05:00 GMT 2023","Tue Jun 13 08:05:00 GMT 2023","585","tests","test_get_tourist","","","","test_invalid_password",""
+"passed","Tue Jun 13 08:04:59 GMT 2023","Tue Jun 13 08:04:59 GMT 2023","570","tests","test_get_tourist","","","","test_empty_login_password",""
+"passed","Tue Jun 13 08:05:00 GMT 2023","Tue Jun 13 08:05:01 GMT 2023","533","tests","test_get_tourist","","","","test_correct_login",""
+"passed","Tue Jun 13 08:04:59 GMT 2023","Tue Jun 13 08:05:00 GMT 2023","547","tests","test_get_tourist","","","","test_invalid_email",""
+"passed","Tue Jun 13 08:04:57 GMT 2023","Tue Jun 13 08:04:57 GMT 2023","561","tests","test_account_login","","","","test_get_correct_tourist_by_id",""
