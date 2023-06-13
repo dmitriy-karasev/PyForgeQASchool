@@ -1,0 +1,2 @@
+New tourist created with id = 236791 in setup
+Received response is {'id': 236791, 'tourist_name': 'Paul Wagner', 'tourist_email': 'cynthia06@example.com', 'tourist_location': 'Earth', 'createdat': '2023-06-13T07:39:16.5070887'}

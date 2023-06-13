@@ -1,0 +1,3 @@
+Existing tourist_id is 236791
+Requested URL is: http://restapi.adequateshop.com/api/Tourist/2367910
+Returned status code is 404

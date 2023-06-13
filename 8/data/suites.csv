@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"passed","Tue Jun 13 07:39:20 GMT 2023","Tue Jun 13 07:39:20 GMT 2023","542","tests","test_post","","","","test_invalid_password",""
+"passed","Tue Jun 13 07:39:17 GMT 2023","Tue Jun 13 07:39:18 GMT 2023","614","tests","test_get","","","","test_get_not_existing_tourist_404_by_id","If the requested id is existing_id + 1 zero then the response is 404 without json"
+"passed","Tue Jun 13 07:39:16 GMT 2023","Tue Jun 13 07:39:17 GMT 2023","539","tests","test_get","","","","test_get_correct_tourist_by_id",""
+"passed","Tue Jun 13 07:39:19 GMT 2023","Tue Jun 13 07:39:19 GMT 2023","537","tests","test_post","","","","test_empty_login_password",""
+"passed","Tue Jun 13 07:39:19 GMT 2023","Tue Jun 13 07:39:20 GMT 2023","625","tests","test_post","","","","test_invalid_email",""
+"passed","Tue Jun 13 07:39:20 GMT 2023","Tue Jun 13 07:39:21 GMT 2023","650","tests","test_post","","","","test_correct_login",""
+"passed","Tue Jun 13 07:39:17 GMT 2023","Tue Jun 13 07:39:17 GMT 2023","604","tests","test_get","","","","test_get_not_existing_tourist_400_by_id","If the requested id is existing_id + 4 zeroes then the response is 400 with json"
