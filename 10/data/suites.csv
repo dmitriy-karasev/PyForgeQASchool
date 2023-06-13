@@ -1,0 +1,8 @@
+"Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
+"failed","Tue Jun 13 09:06:24 GMT 2023","Tue Jun 13 09:06:25 GMT 2023","603","tests","test_account_login","","","","test_get_not_existing_tourist_404_by_id","Tests correct response, 404 for non-existing tourist_id"
+"passed","Tue Jun 13 09:06:23 GMT 2023","Tue Jun 13 09:06:24 GMT 2023","618","tests","test_account_login","","","","test_get_correct_tourist_by_id","Tests correct data is returned for existing tourist"
+"passed","Tue Jun 13 09:06:24 GMT 2023","Tue Jun 13 09:06:24 GMT 2023","584","tests","test_account_login","","","","test_get_not_existing_tourist_400_by_id","Tests correct response, 400 for non-existing tourist_id"
+"passed","Tue Jun 13 09:06:26 GMT 2023","Tue Jun 13 09:06:26 GMT 2023","596","tests","test_get_tourist","","","","test_empty_login_password","Tests correct response in case of empty strings for email and password"
+"passed","Tue Jun 13 09:06:27 GMT 2023","Tue Jun 13 09:06:27 GMT 2023","655","tests","test_get_tourist","","","","test_invalid_password","Tests correct response in case of invalid password"
+"passed","Tue Jun 13 09:06:27 GMT 2023","Tue Jun 13 09:06:28 GMT 2023","558","tests","test_get_tourist","","","","test_correct_login","Tests correct returned data on successful login"
+"passed","Tue Jun 13 09:06:26 GMT 2023","Tue Jun 13 09:06:27 GMT 2023","619","tests","test_get_tourist","","","","test_invalid_email","Tests correct response in case of invalid email"
